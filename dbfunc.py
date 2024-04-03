@@ -68,7 +68,7 @@ class LibraryFunc:
         conditions = []
         values = []
 
-        # Добавим условие поиска пол каждое ключевое слово
+        # Добавим условие поиска под каждое ключевое слово
         for key in keywords:
             conditions.append("(title LIKE ? OR author LIKE ?)")
             values.extend(['%' + key + '%', '%' + key + '%'])
